@@ -1,18 +1,4 @@
-/* variáveis gerais */
-
-:root {
-    --verde-base: rgb(24, 196, 1);
-    --bg-base: rgb(27, 28, 30);
-    --h-f-base: --bg-base; /* cor base do header e footer */
-}
-
-/* font-faces */
-
-@font-face {
-    font-family: 'Inter';
-    font-weight: 100;
-    src: url('assets/fonts/Inter-Regular.woff2');
-}
+@import url(raizes.css);
 
 /* estruturas gerais */
 
@@ -23,11 +9,12 @@ html {
 body {
     background-color: var(--bg-base);
     color:white;
-    font-family: 'Inter', sans-serif;
+    font-family: system-ui;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    cursor: default;
 }
 
 header {
@@ -73,7 +60,7 @@ header a {
 }
 
 header a:hover {
-    color: var(--verde-base);
+    color: var(--cor-primaria);
     transform: scale(1.2);
 }
 
@@ -86,25 +73,25 @@ header a:hover {
     justify-content: center;
     width: 350px;
     height: 400px;
-    box-shadow: 0 0 25px 4px rgb(0, 0, 0);
-    border: 4px solid var(--verde-base);
+    box-shadow: 0 0 7px 4px var(--cor-primaria);
+    border: 4px solid var(--cor-primaria);
     border-radius: 25px;
     padding: 40px;
     margin: 30px;
     align-items: normal;
     height: fit-content;
     width: fit-content;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s, box-shadow 0.1s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 4px var(--cor-primaria);
 }
 
 .header-card {
     font-family: 'Inter', sans-serif;
-    color: var(--verde-base);
+    color: var(--cor-primaria);
     display: flex;
     justify-content: center;
     margin-top: -20px;
