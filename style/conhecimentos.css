@@ -29,9 +29,11 @@ footer {
     background-color: var(--h-f-base);
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: bottom;
+    align-self: center;
     height: 100px;
+    position: absolute;
+    bottom: 0;
+    min-width: 389.74px;
 }
 
 main {
@@ -123,10 +125,6 @@ h1 {
     padding: 30px;
 }
 
-#fischer:hover {
-    cursor: not-allowed;
-}
-
 #incognita {
     display: flex;
     transition: transform 1.2s ease, color 0.2s, scale 0.2s;
@@ -139,7 +137,6 @@ h1 {
 }
 
 #conhecimentos {
-    cursor: not-allowed;
     border-bottom: 2px solid var(--cor-primaria);
     padding-bottom: 4px;
 }
