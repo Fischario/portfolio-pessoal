@@ -1,3 +1,20 @@
+@import url(raizes.css);
+
+html {
+    min-width: max-content;
+}
+
+body {
+    background-color: var(--bg-base);
+    color:white;
+    font-family: system-ui;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+
 header {
     color: white;
     background-color: var(--h-f-base);
@@ -23,6 +40,22 @@ main {
     justify-content: center;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 28.5px;
+}
+
+#header-nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+}
+
 #incognita {
     display: flex;
     transition: transform 1.2s ease, color 0.2s, scale 0.2s;
@@ -35,17 +68,17 @@ main {
 }
 
 #conhecimentos {
-    border-bottom: 2px solid var(--cor-primaria);
-    padding-bottom: 4px;
-}
-
-#sobre {
     display: inline-block;
     transition: 0.2s;
     padding-bottom: 4px;
 }
 
-#sobre:hover {
+#conhecimentos:hover {
     color: var(--cor-primaria);
     transform: scale(1.2);
+}
+
+#sobre {
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 4px;
 }

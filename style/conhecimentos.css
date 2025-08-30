@@ -86,7 +86,6 @@ h1 {
 }
 
 .header-card {
-    font-family: 'Inter', sans-serif;
     color: var(--cor-primaria);
     display: flex;
     justify-content: center;
