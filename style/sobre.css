@@ -1,0 +1,51 @@
+header {
+    color: white;
+    background-color: var(--h-f-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--h-f-base);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    min-width: 389.74px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#incognita {
+    display: flex;
+    transition: transform 1.2s ease, color 0.2s, scale 0.2s;
+}
+
+#incognita:hover {
+    transform: rotate(360deg);
+    color: var(--cor-primaria);
+    scale: 1.2;
+}
+
+#conhecimentos {
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 4px;
+}
+
+#sobre {
+    display: inline-block;
+    transition: 0.2s;
+    padding-bottom: 4px;
+}
+
+#sobre:hover {
+    color: var(--cor-primaria);
+    transform: scale(1.2);
+}
