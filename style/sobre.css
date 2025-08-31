@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     cursor: default;
+    min-height: 100vh;
 }
 
 header {
@@ -29,16 +30,16 @@ footer {
     align-items: center;
     align-self: center;
     height: 100px;
-    position: absolute;
-    bottom: 0;
     min-width: 389.74px;
 }
 
 main {
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding-bottom: 50px;
 }
 
 a {
