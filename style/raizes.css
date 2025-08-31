@@ -1,5 +1,6 @@
 :root {
-    --cor-primaria: rgb(15, 219, 202);
+    --cor-primaria: rgb(93, 218, 207);
+    --cor-secundaria: rgb(202, 202, 0);
     --bg-base: rgb(27, 28, 30);
     --h-f-base: --bg-base; /* cor base do header e footer */
 }
